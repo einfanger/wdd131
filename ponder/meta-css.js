@@ -33,8 +33,15 @@ console.log(student); //does not work, can't access a block variable outside the
 
 let selectElem = document.getElementById('webdevlist');
 selectElem.addEventListener('change', function(){
-    let codeValue = selectElem.value;
-    console.log(codeValue);
-    document.getElementById(codeValue).style.color = 'red';
+  document.querySelector('#html').style.color = 'black';
+  document.querySelector('#css').style.color = 'black';
+  document.querySelector('#js').style.color = 'black';
+  let codeValue = selectElem.value;
+  console.log(codeValue);
+  document.getElementById(codeValue).style.color = 'red';
 })
-                
+         
+const image = document.querySelector('img');
+image.setAttribute('src', 'original.jpg')
+image.setAttribute('alt', 'new logo with black background');
+document.body.className = 'blue';
