@@ -3,19 +3,15 @@ body {
   font-size: 15px;
   line-height: 1.7;
   color: #000000;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
 }
-#content{
-    max-width: 60%;
-    margin: 80px auto;
-    border: 2px solid black;
-    padding: 40px;
-    margin: 30px auto;
-}
+
 #content {
   max-width: 700px;
   margin: 60px auto;
   padding: 20px;
+  border: 2px solid black;
   text-align: left;
 }
 
@@ -23,7 +19,7 @@ h1 {
   font-size: 28px;
   letter-spacing: 2px;
   margin-bottom: 5px;
-  text-align: center;/
+  text-align: center;
 }
 
 h2 {
@@ -43,11 +39,6 @@ hr {
   width: 90%;
 }
 
-.list{
-    list-style-type: none;
-    margin: 0 auto;
-}
-
 p {
   margin: 20px auto;
   max-width: 90%;
@@ -58,12 +49,6 @@ p {
   margin: 30px auto;
   padding-left: 20px;
   max-width: 600px;
-  
-}
-
-#topics{
-    width: 55%;
-    margin: 0 auto;
 }
 
 #topics li {
@@ -74,4 +59,28 @@ img {
   width: 150px;
   display: block;
   margin: 40px auto 0;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.dark #content {
+  border: 2px solid white;
+}
+
+.light {
+  background-color: #ffffff;
+  color: black;
+}
+
+.light #content {
+  border: 2px solid black;
 }

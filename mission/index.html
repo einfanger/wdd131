@@ -9,6 +9,14 @@
   <link rel="stylesheet" href="mission.css">
 </head>
 <body>
+  <div class="theme-toggle">
+    <select id="themeSelect">
+      <option>Choose Mode</option>
+      <option value="dark">Dark</option>
+      <option value="light">Light</option>
+    </select>
+  </div>
+
   <div id="content">
     <h1>MISSION STATEMENT</h1>
     <h2>BRIGHAM YOUNG UNIVERSITY–IDAHO</h2>
@@ -30,7 +38,9 @@
       <li>Delivering education that is affordable for students and the Church.</li>
     </ol>
 
-    <img src="download.png" alt="BYU-Idaho Logo">
-  </div>                    
+    <img src="download.png" alt="BYU-Idaho Logo" id="logo">
+  </div>
+
+  <script src="mission.js"></script>
 </body>
 </html>
