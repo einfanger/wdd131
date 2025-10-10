@@ -17,15 +17,12 @@ gallery.addEventListener('click', (e) => {
     modal.showModal();
 });
 
-// Close button
 closeButton.addEventListener('click', () => modal.close());
 
-// Click outside image
 modal.addEventListener('click', (e) => {
     if (e.target === modal) modal.close();
 });
 
-// Escape key
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') modal.close();
 });
