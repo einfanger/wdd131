@@ -14,8 +14,7 @@ header {
 
 header h1 {
   margin: 0;
-  font-size: 2rem;
-  color: #4a164b;
+  font-size: 1.6rem;
 }
 
 nav {
@@ -26,12 +25,12 @@ nav a {
   margin: 0 8px;
   text-decoration: none;
   color: #a14100;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 main {
   width: 90%;
-  max-width: 900px;
+  max-width: 800px;
   margin: 20px auto;
   padding: 10px;
 }
@@ -39,49 +38,40 @@ main {
 article {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border-top: 1px solid #d4a373;
-  padding: 25px 0;
-}
-
-article:first-of-type {
-  border-top: none;
+  gap: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .info {
-  font-size: 0.95em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
   color: #6b4e3c;
-  margin-bottom: 10px;
-}
-
-.info p {
-  margin: 5px 0;
 }
 
 .date {
   font-style: italic;
 }
 
+.content {
+  text-align: center;
+}
+
 h2 {
   color: #a14100;
-  font-size: 1.4rem;
-  margin: 10px 0;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 
 article img {
   width: 100%;
-  max-width: 200px;
+  max-width: 180px;
   height: auto;
   border: 1px solid #d4a373;
   box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-  margin: 15px 0;
-}
-
-.description {
-  max-width: 600px;
-  line-height: 1.4;
-  color: #3a1a00;
+  margin: 0 auto;
 }
 
 footer {
@@ -89,22 +79,27 @@ footer {
   border-top: 1px solid #d4a373;
   padding: 15px;
   margin-top: 40px;
-  font-style: italic;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 700px) {
+  main {
+    width: 70%;
+    border-left: 1px solid #d4a373;
+    border-right: 1px solid #d4a373;
+    padding: 20px 40px;
+  }
+
   article {
     display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 25px;
+    grid-template-columns: 150px auto;
     align-items: start;
-    text-align: left;
+    gap: 20px;
   }
 
   .info {
-    text-align: right;
-    border-right: 1px solid #d4a373;
-    padding-right: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.9em;
   }
 
   .content {
@@ -113,10 +108,9 @@ footer {
 
   h2 {
     font-size: 1.3rem;
-    margin-top: 0;
   }
 
   article img {
-    margin-left: 0;
+    margin: 10px 0;
   }
 }
