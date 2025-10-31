@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Credit Card Checkout</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Ctext y='28' font-size='28'%3E%F0%9F%92%B3%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="card.css" />
+</head>
+<body>
+  <main class="stage">
+    <div class="card-back" aria-hidden="true">
+      <div class="mag-strip"></div>
+      <div class="back-body"></div>
+    </div>
+
+    <form id="cardForm" class="card-front" novalidate>
+      <div class="card-top">
+        <div class="total">TOTAL: <span class="price">$199</span></div>
+        <div class="chip" aria-hidden="true">
+          <div class="chip-inner"></div>
+        </div>
+      </div>
+
+      <div class="grid-front">
+        <div class="label">CARD NUMBER</div>
+        <div class="input full">
+          <input id="cardNumber" name="cardNumber" type="text"
+                 inputmode="numeric" placeholder="1234 5678 9101 1020"
+                 maxlength="19" autocomplete="cc-number" required>
+        </div>
+
+        <div class="cvc-block" aria-hidden="false">
+          <label for="cvv">CVC/CVV</label>
+          <input id="cvv" name="cvv" type="text" inputmode="numeric" maxlength="4" placeholder="xxx" required>
+        </div>
+
+        <div class="label">CARD HOLDER</div>
+        <div class="input">
+          <input id="cardHolder" name="cardHolder" type="text" placeholder="John Doe" autocomplete="cc-name" required>
+        </div>
+
+        <div id="cardExpiration" class="label">EXPIRATION</div>
+        <div class="expiration-inputs input" role="group" aria-labelledby="cardExpiration">
+          <input id="month" name="expMonth" type="text" inputmode="numeric" maxlength="2" placeholder="MM" aria-labelledby="cardExpiration" required>
+          <input id="year" name="expYear" type="text" inputmode="numeric" maxlength="2" placeholder="YY" aria-labelledby="cardExpiration" required>
+        </div>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="submit">Submit</button>
+        <p id="feedback" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </main>
+
+  <script src="card.js"></script>
+</body>
+</html>
