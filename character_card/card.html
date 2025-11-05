@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Card</title>
+
+  <meta property="og:title" content="Fenric Wolf">
+  <meta property="og:description" content="A powerful creature of the mountains — fierce but noble.">
+  <meta property="og:image" content="wolf.png">
+  <meta property="og:url" content="https://einfanger.github.io/wdd131/character_card">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="card.css">
+</head>
+<body>
+  <div class="card">
+    <img id="image" class="image" alt="Character Image">
+    <div class="name" id="name"></div>
+
+    <div class="stats">
+      <p><strong>Class:</strong> <span id="class"></span></p>
+      <p><strong>Level:</strong> <span id="level"></span></p>
+      <p><strong>Health:</strong> <span id="health"></span></p>
+    </div>
+
+    <div class="buttons">
+      <button id="attackBtn">Attack</button>
+      <button id="levelUpBtn">Level Up</button>
+    </div>
+  </div>
+
+  <script src="card.js"></script>
+</body>
+</html>
