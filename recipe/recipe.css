@@ -20,16 +20,14 @@ header {
   gap: 10px;
 }
 
-/* ———————— HEADER ———————— */
 .header {
   display: flex;
-  flex-direction: column;   /* stack logo above search bar on mobile */
+  flex-direction: column; 
   align-items: center;
   gap: 1rem;
   margin-bottom: 20px;
 }
 
-/* LOGO */
 .logo {
   display: flex;
   flex-direction: column;
@@ -37,14 +35,13 @@ header {
 }
 
 .logo img {
-  width: 80px; /* adjust to match screenshot */
+  width: 80px;
 }
 
-/* SEARCH BAR */
 .search-bar {
   display: flex;
-  width: 90%;              /* responsive mobile width */
-  max-width: 600px;        /* matches large screen layout */
+  width: 90%;            
+  max-width: 600px;       
   border: 2px solid #000;
   border-radius: 10px;
   overflow: hidden;
