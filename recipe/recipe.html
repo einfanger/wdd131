@@ -6,7 +6,6 @@
   <title>RecipeBook</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="recipe.css">
 
   <meta property="og:type" content="website">
@@ -14,7 +13,6 @@
   <meta property="og:description" content="Find, cook, and share your favorite recipes with RecipeBook!">
   <meta property="og:url" content="https://yourgithubusername.github.io/wdd131/recipes">
   <meta property="og:image" content="images/social-preview-image.png">
-
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="RecipeBook - Your Favorite Recipes">
   <meta name="twitter:description" content="Find, cook, and share your favorite recipes with RecipeBook!">
@@ -32,29 +30,18 @@
     </div>
 
     <div class="search-bar">
-      <input type="text" placeholder="Find a recipe">
-      <button>
+      <input id="searchInput" type="text" placeholder="Find a recipe (try: beans, dessert, chicken...)">
+      <button id="searchBtn" aria-label="Search">
         <img src="search.svg" alt="Search">
       </button>
     </div>
   </header>
 
   <main>
-    <section class="recipe-card">
-      <img src="apple-crisp.jpg" alt="Apple Crisp" class="recipe-image">
+    <section id="randomRecipeContainer" class="recipe-card highlight">
+    </section>
 
-      <div class="recipe-info">
-        <p class="tag">dessert</p>
-        <h2 class="recipe-title">Apple Crisp</h2>
-
-        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-          ⭐⭐⭐⭐☆
-        </span>
-
-        <p class="description">
-          This apple crisp recipe is a simple yet delicious fall dessert that's great served warm with vanilla ice cream.
-        </p>
-      </div>
+    <section id="resultsContainer" class="results">
     </section>
   </main>
 
@@ -71,5 +58,7 @@
       </a>
     </p>
   </footer>
+
+  <script src="recipe.js" defer></script>
 </body>
 </html>
