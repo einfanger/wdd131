@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Posh Pathways</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <img src="posh_pathways_logo.png" alt="Posh Pathways Logo" class="logo" />
+      <span class="brand">Posh Pathways</span>
+    </div>
+    <nav class="main-nav">
+      <button class="nav-btn" data-target="home">Home</button>
+      <button class="nav-btn" data-target="tokyo">Tokyo</button>
+      <button class="nav-btn" data-target="paris">Paris</button>
+      <button class="nav-btn" data-target="newyork">New York</button>
+    </nav>
+  </header>
+
+  <main id="app">
+
+    <section id="home" class="view active">
+      <section class="home-hero">
+        <h1>Explore the most interesting cities on Earth, without the stress of planning.</h1>
+      </section>
+
+      <section class="city-grid">
+        <article class="city-card" data-city="tokyo">
+         <img id="heroImage" src="tokyo_overview.jpg" alt="Tokyo" width="1600" height="900">
+          <h2>Tokyo</h2>
+        </article>
+
+        <article class="city-card" data-city="paris">
+       <img id="heroImage" src="paris.jpg" alt="Paris" width="1600" height="900">
+          <h2>Paris</h2>
+        </article>
+
+        <article class="city-card" data-city="newyork">
+          <img id="heroImage" src="new_york_city.jpg" alt="New York City" width="1600" height="900">
+          <h2>New York City</h2>
+        </article>
+      </section>
+    </section>
+
+    <section id="city-view" class="view">
+  <button id="backBtn" class="back-btn">← Back</button>
+
+  <div class="city-hero">
+    <img id="heroImage" src="tokyo_overview.jpg" alt="City hero" />
+    <h1 id="cityTitle" class="city-name">City</h1>
+  </div>
+
+  <div class="description">
+    <p id="locationDescription" class="activity-description">
+      Select an activity or food spot to learn more.
+    </p>
+  </div>
+
+  <div class="city-content">
+    <div class="column">
+      <h2>Top Activities</h2>
+      <ul id="activitiesList" class="click-list"></ul>
+    </div>
+
+    <div class="column">
+      <h2>Top Food Spots</h2>
+      <ul id="foodList" class="click-list"></ul>
+    </div>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer>
+    <p>© 2025 Posh Pathways</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
